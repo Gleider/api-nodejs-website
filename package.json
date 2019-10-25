@@ -7,14 +7,16 @@
   "author": "Thiago Nunes Batista <41683571+ThiagoNunesBatista@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon ./src/server.js"
+    "dev": "cross-env NODE_ENV=dev nodemon ./src/server.js"
   },
   "dependencies": {
+    "cross-env": "^6.0.3",
     "express": "^4.17.1",
     "pg": "^7.12.1",
     "sequelize": "^5.19.8"
   },
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "eslint": "^6.5.1",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
